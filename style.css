@@ -170,8 +170,11 @@ strong, b {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+    clear: both;
   }
 }
+
+
 
 /* Clear floats after the columns */
 .row:after {
