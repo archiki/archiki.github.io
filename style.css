@@ -163,6 +163,7 @@ strong, b {
 @media screen and (max-width: 992px) {
   .column {
     width: 50%;
+    padding: 10px;
   }
 }
 
@@ -170,7 +171,7 @@ strong, b {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
-    /*clear: both;*/
+    padding: 10px;
   }
 }
 
