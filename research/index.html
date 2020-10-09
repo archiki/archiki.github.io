@@ -89,22 +89,41 @@
 
   </li>
   <li>
-    <p><b><a href="https://dl.acm.org/doi/pdf/10.1145/3366424.3382728">Time Series Forecasting for Cold-Start Items by Learning from Related Items using Memory Networks</a></b><br />
+    <b><a href="https://dl.acm.org/doi/pdf/10.1145/3366424.3382728">Time Series Forecasting for Cold-Start Items by Learning from Related Items using Memory Networks</a></b><br />
 Ayush Chauhan, <strong>Archiki Prasad</strong>, Parth Gupta, Amiredddy Prashanth Reddy and Shiv Kumar Saini<br />
 <b><a href="https://www2020.thewebconf.org/">The Web Conference (WWW) 2020 </a></b><br /> 
-<!-- [<a href="https://dl.acm.org/doi/pdf/10.1145/3366424.3382728">pdf</a>] </p> -->
+[<a href="#" onclick="$('#archiki_www20_abstract').toggle();return false;">abstract</a>]
+<div id="archiki_www20_abstract" class="abstract" style="display:none;">
+</br>
+    <p>
+        Time series forecasting for new items is very important in a wide variety of applications. Existing solutions for time series forecasting, however, do not address this cold start problem. The underlying machine learning models in these solutions rely heavily on the availability of the past data points of the time series. Here, we propose to use a modified Dynamic Key-Value Memory Network (DKVMN) that enables knowledge sharing across items. The network is conventionally used for binary tasks in knowledge tracing. We modify it for our regression-based forecasting use-case. Specifically, we change the output layer, include feedback for error correction, add a mechanism to handle scale across items. We test our solution on the SKU level data of a large e-commerce company and compare the results to the widely used LSTM model, outperforming it by over 25% across multiple metrics.
+    </p>
+</div>
   </li>
   <li>
-    <p><b>Key-Value Memory Networks for Predicting Time Series Metrics of Target Entities</b><br />
+    <b>Key-Value Memory Networks for Predicting Time Series Metrics of Target Entities</b><br />
 Shiv Kumar Saini,Ayush Chauhan, <strong>Archiki Prasad</strong>, Parth Gupta, Ritwick Chaudhary and Amiredddy Prashanth Reddy<br />
 <emph>Patent filed at the </emph><b><a href="https://www.uspto.gov/">US Patent and Trademarks Office (2020)</a></b><br />
-[Application No. US16/868942] </p>
+[<a href="#" onclick="$('#archiki_patent').toggle();return false;">summary</a>] [Application No. US16/868942]
+<div id="archiki_patent" class="abstract" style="display:none;">
+</br>
+    <p>
+        This disclosure involves using key-value memory networks to predict time-series data. For instance, a computing system retrieves, for a target entity, static feature data and target time-series feature data. The computing system can normalize the target time-series feature data based on a normalization scale. The computing system also generates input data by, for example, concatenating the static feature data, the normalized time-series feature data, and time-specific feature data. The computing system generates predicted time-series data for the target metric of the target entity by applying a key-value memory network to the input data. The key-value memory network can include a key matrix learned from training static feature data and training time-series feature data, a value matrix representing time-series trends, and an output layer with a continuous activation function for generating predicted time-series data.
+    </p>
+</div>
   </li>
   <li>
-    <p><b><a href="https://arxiv.org/pdf/2009.12961.pdf">Decentralized Age-of-Information Bandits</a></b><br />
+  <b><a href="https://arxiv.org/pdf/2009.12961.pdf">Decentralized Age-of-Information Bandits</a></b><br />
 <strong>Archiki Prasad</strong>, Vishal Jain and Sharayu Moharir<br />
 <emph>Submitted to </emph><b><a href="https://wcnc2021.ieee-wcnc.org/">IEEE-WCNC 2021</a></b><br /> 
-[Submission available on request]</p>
+[<a href="#" onclick="$('#archiki_wcnc21_abstract').toggle();return false;">abstract</a>] [Submission available on request]
+[<a href="#" onclick="$('#archiki_wcnc21_abstract').toggle();return false;">abstract</a>]
+<div id="archiki_www20_abstract" class="abstract" style="display:none;">
+</br>
+    <p>
+        Age-of-Information (AoI) is a performance metric for scheduling systems that measures the freshness of the data available at the intended destination. AoI is formally defined as the time elapsed since the destination received the recent most update from the source. We consider the problem of scheduling to minimize the cumulative AoI in a multi-source multi-channel setting. Our focus is on the setting where channel statistics are unknown and we model the problem as a distributed multi-armed bandit problem. For an appropriately defined AoI regret metric, we provide analytical performance guarantees of an existing UCB-based policy for the distributed multi-armed bandit problem. In addition, we propose a novel policy based on Thomson Sampling and a hybrid policy that tries to balance the trade-off between the aforementioned policies. Further, we develop AoI-aware variants of these policies in which each source takes its current AoI into account while making decisions. We compare the performance of various policies via simulations. 
+    </p>
+</div>
   </li>
 </ul>
 
