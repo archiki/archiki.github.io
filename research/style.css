@@ -115,12 +115,14 @@ p {
 }
 
 a {
-  color: #4183C4;
+  color: #007bff; 
+  /*#4183C4;*/
   text-decoration: none;
   cursor: pointer;
 }
 a:hover, a:active {
-  color: #4183C4;
+  color: #007bff; 
+  /*#4183C4;*/
 }
 
 ul, ol {
