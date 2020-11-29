@@ -62,10 +62,18 @@ table {
 html {
   font-size: 100%;
 }
+font-family: 'Roboto Slab', serif;
+@font-face {
+	font-family: 'Roboto Slab';
+}
+
+@font-face {
+	font-family: 'Roboto Slab';
+}
 
 body {
   background: #fff;
-  font: 18px/1.4 Helvetica, Arial, sans-serif;
+  font: 18px/1.4 'Roboto Slab';
   color: #333;
 }
 
@@ -76,14 +84,7 @@ body {
   width: 100%;
 }
 
-font-family: 'Roboto Slab', serif;
-@font-face {
-	font-family: 'Roboto Slab';
-}
 
-@font-face {
-	font-family: 'Roboto Slab';
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab';
