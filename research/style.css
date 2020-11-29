@@ -121,9 +121,6 @@ h4 {
   color: #666;
 }
 
-span {
-  font-weight: bolder;
-}
 
 p {
   margin: 15px 0;
@@ -165,10 +162,13 @@ em, i {
   font-style: italic;
 }
 
-strong, b {
-  font-weight: bold;
+strong {
+  font-weight: bolder;
 }
 
+b {
+  font-weight: bold;
+}
 .column {
   float: left;
   /*width:-webkit-calc(35% - (30px / 2));width:calc(35% - (30px / 2))*/
