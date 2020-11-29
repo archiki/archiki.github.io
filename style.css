@@ -127,13 +127,13 @@ p {
 }
 
 a {
-  color: #007bff; 
+  color: #000080; 
   /*#4183C4;*/
   text-decoration: none;
   cursor: pointer;
 }
 a:hover, a:active {
-  color: #007bff; 
+  color: #000080; 
   /*#4183C4;*/
 }
 
