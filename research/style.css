@@ -162,6 +162,10 @@ em, i {
   font-style: italic;
 }
 
+small {
+  font-size: small;
+}
+
 strong {
   font-weight: bolder;
 }
