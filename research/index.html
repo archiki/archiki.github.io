@@ -103,7 +103,7 @@ Ayush Chauhan, <strong>Archiki Prasad</strong>, Parth Gupta, Amiredddy Prashanth
 </p>
   </li>
   <li>
-    <p><b>Key-Value Memory Networks for Predicting Time Series Metrics of Target Entities</b><br />
+    <p><b style="color: #800000">Key-Value Memory Networks for Predicting Time Series Metrics of Target Entities</b><br />
 Shiv Kumar Saini, Ayush Chauhan, Parth Gupta, <strong>Archiki Prasad</strong>, Ritwick Chaudhary and Amiredddy Prashanth Reddy<br />
 <em>Patent filed at the </em><b><a href="https://www.uspto.gov/">US Patent and Trademarks Office</a></b> <em>2020 | Adobe Inc.</em><br />
 [<a href="#" onclick="$('#archiki_patent').toggle();return false;" style="font-variant: small-caps;">summary</a>] [Application No. US16/868942]
@@ -147,12 +147,12 @@ Shiv Kumar Saini, Ayush Chauhan, Parth Gupta, <strong>Archiki Prasad</strong>, R
 
 <h3 id="research-projects">RESEARCH PROJECTS</h3>
 Please have a look at my <a href="/files/CV.pdf">Curriculum Vitae</a> for a comprehensive list of my research projects and experience.
-<h3 id="2020">2020</h3>
+<h4 id="2020">2020</h4>
 <p><b>Adapting Multilingual BERT for Code-Switching</b><br/>
 <em>Guide: <a href="https://www.cse.iitb.ac.in/~pjyothi/">Prof. Preethi Jyothi</a></em></p>
 
 <p><strong style="color:#800000;">> What is code-switching?</strong> Code-Switching occurs when more than one language is used in the same text or conversation. For languages with differenct scripts such as English-Hindi, code-switched data may be in the native script, eg. <strong>Weekend</strong> का क्या <strong>plan</strong> है<strong>?</strong>, or transliterated in the roman script, eg. <strong>Weekend ka kya plan hai?</strong><br/>
-<strong style="color:#800000;">> Why is this problem important?</strong> A majority of english spearkers around the world are non-native speakers and thus, speak more than one language. For such speakers, there is a tendency to switch between two languages in informal verbal and textual settings such as conversations, social-media posts. However, NLP systems struggle to understand such text. Bridging this gap will enable these systems to have a larger reach.<br/>
+<strong style="color:#800000;">> Why is this problem important?</strong> A majority of english speakers around the world are non-native speakers and thus, speak more than one language. For such speakers, there is a tendency to switch between two languages in informal verbal and textual settings such as conversations, social-media posts. However, NLP systems struggle to understand such text. Bridging this gap will enable these systems to have a larger reach.<br/>
 <strong style="color:#800000;">> Our focus</strong> is to work on natural language understanding tasks such as natural language inference (NLI) on code-switched data by expanding the capabilities of multilingual BERT which has been trained on large amounts of data in about 104 languages. Specifically, we are exploring an intermediate-task learning frameworks for this goal.  
 </p>
 
@@ -168,41 +168,26 @@ Please have a look at my <a href="/files/CV.pdf">Curriculum Vitae</a> for a comp
 
 <p><strong style="color:#800000;">> What is Age-of-Information?</strong> Age-of-Information (AoI) is a performance metric for scheduling systems that measures the freshness of the data available at the intended destination. AoI is formally defined as the time elapsed since the destination received the recent most update from the source. In our case, we minimize the total AoI of a network of sources.<br/>
 <strong style="color:#800000;">> Why is this problem important?</strong> With an increasing number of IoT devices, there are several applications in which a large network of (decentralized) devices or sensors need to communicate to a control center using a limited number of channels. In many cases, heavily delayed information is not useful in the decision making of the main control center. The definition of AoI captures this constraint and minimizing this metric is mre challenging than maximizing a bernoulli reward. <br/>
-<strong style="color:#800000;">> Our focus</strong> is to use multi-armed bandits to adress this scheduling problem. We have extended scheduling algorithms using Upper Confidence Bound and Thompson Sampling to minimize the AoI and proposed a novel hybrid policy. We have also made metric-aware modifications that further minimize regret. 
+<strong style="color:#800000;">> Our focus</strong> was to use multi-armed bandits to adress this scheduling problem. We have extended scheduling algorithms using Upper Confidence Bound and Thompson Sampling to minimize the AoI and proposed a novel hybrid policy. We have also made metric-aware modifications that further minimize regret. 
 </p>
 
+<h4 id="2019">2019</h4>
 
-<!-- <p><strong>Learning with Noisy Sequence Labels</strong><br />
-<em>Bachelor’s Thesis guided by <a href="https://www.cse.iitb.ac.in/~pjyothi/">Prof. Preethi Jyothi</a></em></p>
-
-<p>Majority of the datasets collected by crowdsourcing tend to have noisy labels. Although there is a lot of theoretical and empirical work for learning with noisy labels for multiclass classification, there is very sparse work for structured outputs such as sequences. We are currently working on the problem of probablistic label aggregation for tasking involving sequences such as Part of Speech tagging and Named Entity Recognition.</p>
-
-<p><strong>Policy Iteration Lower Bounds for Multi-Action MDPs</strong> <a href="https://joshinh.github.io/files/CS747_report.pdf">[report]</a><br />
-<em>Guide: <a href="https://www.cse.iitb.ac.in/~shivaram/">Prof. Shivaram K</a> (Course Project)</em></p>
-
-<p>Simple Policy Iteration is a type of policy iteration algorithm where the policy of only one improvable state is changed at every step. <a href="https://pdfs.semanticscholar.org/b321/9edc2ce55b2d7f5d45cc014a0d2733ed3051.pdf">Melekopoglou and Condon</a> showed an exponential lower bound for 2-action MDPs. We generalized the MDPs to k-actions and demonstrate a lower bound of O(k.exp(n)).</p>
-
-<p><strong>Explainable Natural Language Inference</strong><br />
-<em>Guide: <a href="http://www.nec-labs.com/christopher-malon">Dr. Christopher Malon</a> (Internship at NEC Labs, Princeton)</em></p>
-
-<p>Simple entailment models try to judge the hypotheses as true, false, or unsupported based on information in a single sentence or group of concatenated sentences, but this information is sometimes insufficient. We constructed datasets for multi-hop NLI by transforming existing multi-hop QA datasets and proposed models which could perform multi-hop reasoning. Our model could also generate explanations for the inferential relationship without any direct supervision.</p>
-
-<h3 id="2018">2018</h3>
-
-<p><strong>Interpretable Multi-hop Reading Comprehension</strong> <a href="https://www.aclweb.org/anthology/P19-1261/">[paper]</a> <br />
-<em>Guide: <a href="">Prof. Mohit Bansal</a> (Internship at UNC Chapel Hill)</em></p>
-
-<p>Built interpretable models for multi-hop reading comprehension which searched and assembled important contextual information, by constructing a tree of reasoning chains to answer a given question. By constructing explicit reasoning chains, it was possible to understand the exact evidence used by the model. Achieved strong results on two challenging datasets and also demonstrated the interpretability through various analysis and ablations.</p>
-
-<p><strong>Cross-lingual Question Generation</strong> <a href="https://www.aclweb.org/anthology/P19-1481/">[paper]</a><br />
-<em>Guide: <a href="https://www.cse.iitb.ac.in/~ganesh/">Prof. Ganesh Ramakrishnan</a> and <a href="https://www.cse.iitb.ac.in/~pjyothi/">Prof. Preethi Jyothi</a></em></p>
-
-<p>Many Natural Language Generation tasks assume access to large supervised datasets which may not be available for all languages. We proposed cross-lingual pre-training methods which could leverage information from data rich languages (such as English) to improve performance on the downstream task for low resource languages (such as Hindi). We also released a small Hindi QA dataset along with the work.</p>
-
-<p><strong>Accent Adaptation for Speech Recognition</strong> <a href="https://joshinh.github.io/files/RnD_Report.pdf">[report]</a> <br />
+<p><b>Probing End-to-End ASR for Accent Information</b><br/>
 <em>Guide: <a href="https://www.cse.iitb.ac.in/~pjyothi/">Prof. Preethi Jyothi</a></em></p>
 
-<p>Majority of the state-of-the-art automatic speech recognition (ASR) systems for English are trained on the readily available US-accented data and perform poorly on other accents. We introduced domain adversarial training techniques to adapt ASR systems to low resource accents. Extended this work (later in 2019) by proposing a novel coupled training paradigm which exploited speech data with same text content. Our method gave huge gains in performance on heavy accents such as Indian.</p> -->
+<p><strong style="color:#800000;">> What is the effect of accents on ASR?</strong> Most of the standard speech recognition datasets contain speech from only native english speakers often in the American accent. Systems trained on such datasets tend to underperform when subjected to new accent such as UK or Australian English. This performance gap further widens for thick accents such as Indian or Scottish English.<br/>
+<strong style="color:#800000;">> Why is this problem important?</strong> Due to the performance disparity and the large number of non-native speakers the problem of accent adaptation has recieved a lot of attention. However, as the field has moved towards end-to-end models that are opaque, there is very limited understanding about how the effect of accents manifests in these networks. Progress in understanding this model behaviour will not only reveal the defects in these systems but can also inform adaptation techniques.<br/>
+<strong style="color:#800000;">> Our focus</strong> was to understand how this effect manifests in a renowned end-to-end ASR system called DeepSpeech2. We use a lot of popular interpretability techniques such a saliency maps, information-theoretic measures and probing classifiers that shed light on the model behaviour and how it changes for different accents.
+
+<p><b>Time Series Forecasting of Cold-Start Entities</b><br/>
+<em>Guide: <a href="https://research.adobe.com/person/shiv-kumar-saini/">Dr. Shiv Saini</a></em></p>
+
+<p><strong style="color:#800000;">> What are cold-start entities/products?</strong> These are products that have little or no historical data. Often, newly launched products fit into this category.</strong><br/>
+<strong style="color:#800000;">> Why is this problem important?</strong> Most machine learning-based solutions for time-series forecasting rely on historical sequential data and fail to generate any reasonable forecasts for cold-start products. At the same time, these forecasts for these products are extremely valuable to end-users like analysts to make crucial decisions early into the product life-cycle and manage inventory.<br/>
+<strong style="color:#800000;">> Our focus</strong> was to design a framework that maximizes learning between cold-start and data-rich products and use all the textual meta-information available about the product. For this we used a Key-Value Memory network which reinforces cross-learning and outperforms the LSTM baseline. An additional goal of this project was to track the products that were similar as per the model at different time steps.
+
+
 
   </div>
 
