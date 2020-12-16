@@ -135,7 +135,8 @@ a {
 }
 a:hover, a:active {
   color: #800000;
-  font-weight: bolder; 
+  font-weight: bolder;
+  text-decoration: underline; 
   /*#4183C4;*/
 }
 
