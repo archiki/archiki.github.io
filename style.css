@@ -378,7 +378,7 @@ footer {
 }
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #800000; /* Green */
   border: none;
   color: white;
   padding: 3px 12px;
@@ -399,8 +399,8 @@ footer {
 }
 
 .button1:hover {
-  background-color: #80000;
-  color: black;
+  background-color: maroon;
+  color: white;
 }
 
 .button2 {
