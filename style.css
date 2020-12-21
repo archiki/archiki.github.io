@@ -401,6 +401,7 @@ footer {
 .button1:hover {
   background-color: maroon;
   color: white;
+  font-weight:bolder;
 }
 
 .button2 {
