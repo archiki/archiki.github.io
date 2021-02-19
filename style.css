@@ -62,18 +62,18 @@ table {
 html {
   font-size: 100%;
 }
-font-family: 'Roboto Slab', serif;
+font-family: 'Ubuntu', serif;
 @font-face {
-	font-family: 'Roboto Slab';
+	font-family: 'Ubuntu';
 }
 
 @font-face {
-	font-family: 'Roboto Slab';
+	font-family: 'Ubuntu';
 }
 
 body {
   background: #fff;
-  font: 16px/1.4 'Roboto Slab';
+  font: 16px/1.4 'Ubuntu';
   font-weight: lighter;
   color: #333;
 }
@@ -88,7 +88,7 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab';
+  font-family: 'Ubuntu';
   color: #222;
   font-weight: bold;
   line-height: 1.7;
@@ -283,9 +283,9 @@ img {
   margin: 0;
   color: #333;
   cursor: pointer;
-  font-family: 'Roboto Slab';
+  font-family: 'Ubuntu';
   font-weight: 300;
-  font-size: 28px;
+  font-size: 38px;
   letter-spacing: 1px;
 }
 
@@ -303,7 +303,7 @@ img {
 nav {
   float: right;
   margin-top: 23px;
-  font-family: 'Roboto Slab';
+  font-family: 'Ubuntu';
   font-size: 18px;
 }
 @media screen and (max-width: 640px) {
