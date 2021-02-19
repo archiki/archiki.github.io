@@ -286,7 +286,7 @@ img {
   font-family: 'Ubuntu';
   font-weight: 300;
   font-size: 38px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .site-description {
