@@ -127,14 +127,14 @@ p {
 }
 
 a {
-  color: #800000; 
+  color: #318CE7; 
   /*#007bff;*/
   text-decoration: none;
   font-weight: bolder;
   cursor: pointer;
 }
 a:hover, a:active {
-  color: #800000;
+  color: #0039a6;
   font-weight: bolder;
   text-decoration: underline; 
   /*#4183C4;*/
@@ -324,7 +324,7 @@ nav a {
 @media screen and (max-width: 640px) {
   nav a {
     margin: 0 10px;
-    color: #800000;
+    color: #318CE7;
   }
 }
 
@@ -378,7 +378,7 @@ footer {
 }
 
 .button {
-  background-color: #800000; /* Green */
+  background-color: #318CE7; /* Green */
   border: none;
   color: white;
   padding: 3px 12px;
@@ -395,7 +395,7 @@ footer {
 .button1 {
   background-color: maroon; 
   color: white; 
-  border: 2px solid #800000;
+  border: 2px solid #318CE7;
 }
 
 .button1:hover {
