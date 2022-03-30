@@ -136,7 +136,7 @@ a {
 a:hover, a:active {
   color: #0039a6;
   font-weight: bolder;
-  text-decoration: underline; 
+  text-decoration: none; 
   /*#4183C4;*/
 }
 
