@@ -140,6 +140,12 @@ a:hover, a:active {
   /*#4183C4;*/
 }
 
+tt {
+  font-family: "Lucida Console", "Menlo", "Monaco", "Courier",
+               monospace;
+}
+
+
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
