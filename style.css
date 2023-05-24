@@ -171,6 +171,10 @@ em, i {
   font-style: italic;
 }
 
+#small-caps {
+  font-variant-caps: small-caps;
+}  
+
 small {
   font-size: smaller;
 }
