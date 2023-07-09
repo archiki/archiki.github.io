@@ -7,7 +7,7 @@
         content="MeetingQA: Extractive Question-Answering on Meeting Transcripts">
   <meta name="keywords" content="MeetingQA">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><sc>MeetingQA</sc>: Extractive Question-Answering on Meeting Transcripts &ndash; Project Page</title>
+  <title>MeetingQA: Extractive Question-Answering on Meeting Transcripts &ndash; Project Page</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -65,7 +65,7 @@
         </a>
         <div class="navbar-dropdown">
           <a class="navbar-item" href="https://archiki.github.io/MeetingQA.html">
-            VLN-SIG
+            MeetingQA
           </a>
         </div>
       </div>
@@ -214,9 +214,19 @@
         <center><img src="./files/images/human_eval.png" alt="Teaser" width="100%"></center>
   
         <div class="content has-text-justified">
-  <p>We first calculate the overall image semantics with a weight function after filtering the visual vocabulary with dynamic codebook selection method. Then, we pre-train the VLN agent with three proxy tasks to learn the image semantic information.
-    Specifically, Masked Trajectory Modeling predicts the missing image semantics in a given navigation trajectory based on instructions. Masked Panorama Modeling predicts the image semantics of the missing views in a panorama. MTM and MPM together help the agent learn image semantics in both temporal and spatial space.
-  Action Prediction with Image Generation mimics the action prediction process and predicts the image semantics of the next step. Lastly, we fine-tune the navigation agent on navigation loss and APIG loss. </p>
+  <p>
+    We annotated public meetings from AMI (Augmented Multi-party Interaction) corpus with ~100 hours manually transcribed meetings.
+To this end, we recruited annotators to label which sentences from the transcript answer each question along with meta-data.
+We found high inter-annotator agreement with Krippendorff’s α of 0.73, obtaining annotations for 166 meetings at $61 per meeting. 
+    </p>
+
+<p>
+<strong>Question Types</strong>: Even questions framed in ‘yes/no’ manner are information-seeking and elicit detailed responses, ~50% of questions are opinion-seeking and ~20% are framed rhetorically.
+<strong>Answer Types</strong>: 30% of questions are unanswerable, 40% of answers are multi-span (non-consecutive sentences) and 48% involve multiple speakers. Nearly 70% of multi-speaker answers contain some level of disagreement among participants. 
+<strong>Length Distribution</strong>: Average length of a transcript, question, and corresponding answer is 5.9K, 12, and 35 words, respectively.
+<strong>Human Performance</strong>: F1=84.6 on 250 questions from the test set.
+
+    </p>
         </div>
   
       </div>
@@ -232,9 +242,9 @@
     <h2 class="title is-3">Method</h2>
 
       <div class="content has-text-justified">
-<p>We first calculate the overall image semantics with a weight function after filtering the visual vocabulary with dynamic codebook selection method. Then, we pre-train the VLN agent with three proxy tasks to learn the image semantic information.
-  Specifically, Masked Trajectory Modeling predicts the missing image semantics in a given navigation trajectory based on instructions. Masked Panorama Modeling predicts the image semantics of the missing views in a panorama. MTM and MPM together help the agent learn image semantics in both temporal and spatial space.
-Action Prediction with Image Generation mimics the action prediction process and predicts the image semantics of the next step. Lastly, we fine-tune the navigation agent on navigation loss and APIG loss. </p>
+<p>
+
+</p>
       </div>
 
     </div>
