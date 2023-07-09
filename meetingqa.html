@@ -252,10 +252,13 @@ Action Prediction with Image Generation mimics the action prediction process and
     <div class="column is-four-fifths">
       <h2 class="title is-5">Performance: Fine-tuned</h2>
 
-    <center><img src="./files/images/Tab3.png" alt="Teaser" width="60%"></center>
+    <center><img src="./files/images/Tab3.png" alt="Teaser" width="100%"></center>
 
     <div class="content has-text-justified">
-      We demonstrate the effectiveness of our proposed three tasks for VLN in-domain pre-training. Adding any of our proposed tasks improves the performance by a large margin in both success rate (SR) and success rate weighted by path length (SPL).
+        We find that short-context models slightly outperform long-context models by 1-2 F1 points. Additionally, multi-span models have comparable or less performance than single-span models.
+        In summary, we notive ≥ 25 F1 points gap with human performance.
+        
+        
     </div>
   </div>
   </div>
@@ -267,7 +270,8 @@ Action Prediction with Image Generation mimics the action prediction process and
     <center><img src="./files/images/Tab4.png" alt="Teaser" width="70%"></center>
 
     <div class="content has-text-justified">
-      We demonstrate that it’s important to select a subset of visual tokens either statically or dynamically for the agent to effectively learn the large visual token vocabulary extracted with pre-trained dVAE.
+        We observe that all models exhibit poor zero-shot performance (~45 F1 points gap). Furthermore, augmenting with silver data improves zero-shot performance. We also demostrate that larger instruction-tuned LMs (Flan-T5) yield comparable performance.
+        
     </div>
   </div>
   </div>
@@ -279,7 +283,8 @@ Action Prediction with Image Generation mimics the action prediction process and
     <center><img src="./files/images/Fig4.png" alt="Teaser" width="70%"></center>
 
     <div class="content has-text-justified">
-      We also show that block-wise weighted function help the agent to learn the image semantics better.
+    Models struggle at identifying rhetorical questions, especially in zero-shot settings. Further, single-span predictions contain a greater fraction of irrelevant sentences. Lastly, models struggle to identify which speakers answer a question, especially in zero-shot setting.
+        
     </div>
   </div>
   </div>
