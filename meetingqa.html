@@ -221,10 +221,10 @@ We found high inter-annotator agreement with Krippendorff’s α of 0.73, obtain
     </p>
 
 <p>
-<strong>Question Types</strong>: Even questions framed in ‘yes/no’ manner are information-seeking and elicit detailed responses, ~50% of questions are opinion-seeking and ~20% are framed rhetorically.
-<strong>Answer Types</strong>: 30% of questions are unanswerable, 40% of answers are multi-span (non-consecutive sentences) and 48% involve multiple speakers. Nearly 70% of multi-speaker answers contain some level of disagreement among participants. 
-<strong>Length Distribution</strong>: Average length of a transcript, question, and corresponding answer is 5.9K, 12, and 35 words, respectively.
-<strong>Human Performance</strong>: F1=84.6 on 250 questions from the test set.
+<strong>Question Types</strong>: Even questions framed in ‘yes/no’ manner are information-seeking and elicit detailed responses, ~50% of questions are opinion-seeking and ~20% are framed rhetorically.<br>
+<strong>Answer Types</strong>: 30% of questions are unanswerable, 40% of answers are multi-span (non-consecutive sentences) and 48% involve multiple speakers. Nearly 70% of multi-speaker answers contain some level of disagreement among participants.<br>
+<strong>Length Distribution</strong>: Average length of a transcript, question, and corresponding answer is 5.9K, 12, and 35 words, respectively.<br>
+<strong>Human Performance</strong>: F1=84.6 on 250 questions from the test set.<br>
 
     </p>
         </div>
@@ -243,7 +243,9 @@ We found high inter-annotator agreement with Krippendorff’s α of 0.73, obtain
 
       <div class="content has-text-justified">
 <p>
+    For short-context models, we find that the entire meeting transcripts do not fit in the input context. Thus, we retrieve a segment from transcript based on location of the question. Long-context models on the other hand have longer input context budgets, so for these we fit as much of the transcript as possible (around the question). We explore both single-span models that predict a single-span answer from first to last relevant sentence and multi-span models that treat QA as token-classification task. Additionally, we augment training data with automatically annotated answer spans for interviews from MediaSum dataset.
 
+    
 </p>
       </div>
 
