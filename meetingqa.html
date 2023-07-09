@@ -140,6 +140,24 @@
                   </span>
                   <span>Data</span>
                   </a>
+                <!-- Poster Link. -->
+              <span class="link-block">
+                <a href="https://archiki.github.io/files/Poster_4357.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Poster</span>
+                  <!-- Slides Link. -->
+              <span class="link-block">
+                <a href="https://archiki.github.io/files/MeetingQA-Slides.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Slides</span>
+                </a>
+              </span>
             </div>
 
           </div>
@@ -154,10 +172,12 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
 
-      <center><img src="./VLN-SIG/intro.png" alt="Teaser" width="70%"></center>
+      <center><img src="./files/images/Fig1.png" alt="Teaser" width="70%"></center>
 
       <div class="content has-text-justified">
-        Overview of our proposed method VLN-SIG. We obtain the semantics of an image with a pre-trained image tokenizer, and use codebook selection and patch semantic calculation to adapt it to efficient in-domain VLN learning. We pre train the agent on three proxy tasks and fine-tune the agent using Action Prediction with Image Generation (APIG) as the additional auxiliary task.
+        Overview of our new and challenging extractive question answering (QA) dataset: MeetingQA. We annotate public meetings from the AMI corpus for QA (100 hours) containing a total of 7.7K questions. Our questions are longer,open-ended, and discussion-seeking including interesting scenarios such as rhetorical questions, multi-span answers and/or multi-speaker answers. Compared to human performance, fine-tuned models (single/multi-span, and short/long-context variants) severely underperform leaving huge room for improvement (~25 F1 points). In the zero-shot setting, the performance gap widens even further (~45 F1 points).
+
+
       </div>
 
     </div>
@@ -185,12 +205,31 @@
 <hr>
 
 <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+      <h2 class="title is-3">Data Collection and Analysis</h2>
+  
+        <center><img src="./files/images/Tab1.png" alt="Teaser" width="100%"></center>
+        <center><img src="./files/images/human_eval.png" alt="Teaser" width="100%"></center>
+  
+        <div class="content has-text-justified">
+  <p>We first calculate the overall image semantics with a weight function after filtering the visual vocabulary with dynamic codebook selection method. Then, we pre-train the VLN agent with three proxy tasks to learn the image semantic information.
+    Specifically, Masked Trajectory Modeling predicts the missing image semantics in a given navigation trajectory based on instructions. Masked Panorama Modeling predicts the image semantics of the missing views in a panorama. MTM and MPM together help the agent learn image semantics in both temporal and spatial space.
+  Action Prediction with Image Generation mimics the action prediction process and predicts the image semantics of the next step. Lastly, we fine-tune the navigation agent on navigation loss and APIG loss. </p>
+        </div>
+  
+      </div>
+    </div>
+    </div>
+  </section>
+  <hr>
+
+<section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
     <h2 class="title is-3">Method</h2>
-
-      <center><img src="./VLN-SIG/method.png" alt="Teaser" width="100%"></center>
 
       <div class="content has-text-justified">
 <p>We first calculate the overall image semantics with a weight function after filtering the visual vocabulary with dynamic codebook selection method. Then, we pre-train the VLN agent with three proxy tasks to learn the image semantic information.
