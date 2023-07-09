@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Improving Vision-and-Language Navigation by Generating Future-View Image Semantics">
-  <meta name="keywords" content="VLN">
+        content="MeetingQA: Extractive Question-Answering on Meeting Transcripts">
+  <meta name="keywords" content="MeetingQA">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Improving Vision-and-Language Navigation by Generating Future-View Image Semantics</title>
+  <title><sc>MeetingQA</sc>: Extractive Question-Answering on Meeting Transcripts &ndash; Project Page</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -53,7 +53,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://jialuli-luka.github.io/">
+      <a class="navbar-item" href="https://archiki.github.io/">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
@@ -64,17 +64,8 @@
           Projects
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://jialuli-luka.github.io/VLN-SIG">
+          <a class="navbar-item" href="https://archiki.github.io/MeetingQA.html">
             VLN-SIG
-          </a>
-          <a class="navbar-item" href="https://arxiv.org/abs/2203.15685">
-            EnvEdit
-          </a>
-          <a class="navbar-item" href="https://arxiv.org/abs/2207.02185">
-            CLEAR
-          </a>
-          <a class="navbar-item" href="https://aclanthology.org/2021.naacl-main.82/">
-            SyntaxVLN
           </a>
         </div>
       </div>
@@ -89,23 +80,30 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-3 publication-title">Improving Vision-and-Language Navigation by Generating Future-View Image Semantics (CVPR 2023)</h1>
+          <h1 class="title is-3 publication-title">MeetingQA: Extractive Question-Answering on Meeting Transcripts (ACL 2023)</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://jialuli-luka.github.io/">Jialu Li</a><sup>1</sup>,</span>
+              <a href="https://archiki.github.io/">Archiki Prasad</a><sup>1</sup>,</span>
             <span class="author-block">
+            <a href="https://research.adobe.com/person/trung-bui/">Trung Bui</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://david-yoon.github.io/">Seunghyun Yoon</a><sup>2</sup>,</span>
+              <a href="https://research.adobe.com/person/hanieh-deilamsalehy/">Hanieh Deilamsalehy</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://research.adobe.com/person/franck-dernoncourt/">Franck Dernoncourt</a><sup>2</sup>,</span>
               <a href="https://www.cs.unc.edu/~mbansal/">Mohit Bansal</a><sup>1</sup>,</span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of North Carolina, Chapel Hill</span>
+            <span class="author-block"><sup>2</sup>Adobe Research</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2304.04907"
+                <a href="https://archiki.github.io/files/MeetingQA_ACL2023.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -125,7 +123,7 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/jialuli-luka/VLN-SIG"
+                <a href="https://github.com/adobe-research/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -134,14 +132,14 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+              <span class="link-block">
+                <a href="https://github.com/adobe-research/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a> -->
+                  </a>
             </div>
 
           </div>
@@ -176,9 +174,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Vision-and-Language Navigation (VLN) is the task that requires an agent to navigate through the environment based on natural language instructions.
-   At each step, the agent takes the next action by selecting from a set of navigable locations. In this paper, we aim to take one step further and explore whether the agent can benefit from generating the potential future view during navigation. Intuitively, humans will have an expectation of how the future environment will look like, based on the natural language instructions and surrounding views, which will aid correct navigation. Hence, to equip the agent with this ability to generate the semantics of future navigation views, we first propose three proxy tasks during the agent's in-domain pre-training: Masked Panorama Modeling (MPM), Masked Trajectory Modeling (MTM), and Action Prediction with Image Generation (APIG). These three objectives teach the model to predict missing views in a panorama (MPM), predict missing steps in the full trajectory (MTM), and generate the next view based on the full instruction and navigation history (APIG), respectively.
-We then fine-tune the agent on the VLN task with an auxiliary loss that minimizes the difference between the view semantics generated by the agent and the ground truth view semantics of the next step. Empirically, our VLN-SIG achieves the new state-of-the-art on both Room-to-Room dataset and CVDN dataset. We further show that our agent learns to fill in missing patches in future views qualitatively, which brings more interpretability over agents' predicted actions. Lastly, we demonstrate that learning to predict future view semantics also enables the agent to have better performance on longer paths.
+            With the ubiquitous use of online meeting platforms and robust automatic speech recognition systems, meeting transcripts have emerged as a new and interesting domain for natural language tasks. Most recent works on meeting transcripts are restricted to summarization and extraction of action items. However, meeting discussions also have a useful question-answering (QA) component, crucial to understanding the discourse or meeting content, and can be used to build interactive interfaces on top of long transcripts. Hence, in this work, we leverage this inherent QA component of meeting discussions and introduce MeetingQA, an extractive QA dataset comprising questions asked by meeting participants and corresponding responses. As a result, questions can be open-ended and seek active discussions, while the answers can be multi-span and spread across multiple speakers. Our comprehensive empirical study of several robust baselines including long-context language models and recent instruction-tuned models reveals that models perform poorly on this task (F1 = 57.3) and severely lag behind human performance (F1 = 84.6), thus presenting a useful, challenging new task for the community to improve upon.
           </p>
         </div>
       </div>
@@ -213,95 +209,9 @@ Action Prediction with Image Generation mimics the action prediction process and
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
     <h2 class="title is-3">Results</h2>
-    <h2 class="title is-5">Test Leaderboard Performance</h2>
-    <center>
-    <table border="1" >
-  <tr>
-    <th style="text-align: center; vertical-align: middle;" colspan="1">Model</th>
-    <th style="text-align: center; vertical-align: middle;" colspan="4">R2R</th>
-    <th style="text-align: center; vertical-align: middle;" colspan="2">CVDN</th>
-  </tr>
-  <tr>
-    <td style="text-align: center; vertical-align: middle;" colspan="1"></td>
-    <td style="text-align: center; vertical-align: middle;" colspan="2">Val Unseen</td>
-    <td style="text-align: center; vertical-align: middle;" colspan="2">Test</td>
-    <td style="text-align: center; vertical-align: middle;" colspan="1">Val Unseen</td>
-    <td style="text-align: center; vertical-align: middle;" colspan="1">Test</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td style="text-align: center; vertical-align: middle;">SR</td>
-    <td style="text-align: center; vertical-align: middle;">SPL</td>
-    <td style="text-align: center; vertical-align: middle;">SR</td>
-    <td style="text-align: center; vertical-align: middle;">SPL</td>
-    <td style="text-align: center; vertical-align: middle;">GP</td>
-    <td style="text-align: center; vertical-align: middle;">GP</td>
-  </tr>
-  <tr>
-    <td style="text-align: center; vertical-align: middle; width: 20%"><a href="https://arxiv.org/abs/2002.10638">PREVALENT</a></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">58</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">53</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">54</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">51</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">3.15</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">2.44</td>
-  </tr>
-  <tr>
-    <td style="text-align: center; vertical-align: middle; width: 20%"><a href="https://arxiv.org/abs/2011.13922">Rec-BERT</a></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">63</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">57</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">63</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">57</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">-</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">-</td>
-  </tr>
-  <tr>
-    <td style="text-align: center; vertical-align: middle; width: 20%"><a href="https://arxiv.org/abs/2110.13309">HAMT</a></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">66</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">61</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">65</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">60</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">5.13</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">5.58</td>
-  </tr>
-  <tr>
-    <td style="text-align: center; vertical-align: middle; width: 20%">Ours</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%"><b>68</b></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%"><b>62</b></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%"><b>65</b></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%"><b>60</b></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%"><b>5.52</b></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%"><b>5.83</b></td>
-  </tr>
-  <tr>
-    <td style="text-align: center; vertical-align: middle; width: 20%"><a href="https://arxiv.org/abs/2202.11742">DUET<sup>*</sup></a></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">72</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">60</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">69</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">59</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">-</td>
-    <td style="text-align: center; vertical-align: middle; width: 10%">-</td>
-  </tr>
-  <tr>
-    <td style="text-align: center; vertical-align: middle; width: 20%">Ours<sup>*</sup></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%"><b>72</b></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%"><b>62</b></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%"><b>72</b></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%"><b>60</b></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%"><b>-</b></td>
-    <td style="text-align: center; vertical-align: middle; width: 10%"><b>-</b></td>
-  </tr>
-</table>
-</center>
-      <div class="content has-text-justified">
-<p>Comparison with state-of-the-art agents on Room-to-Room (R2R) and Cooperative Vision-and-Dialog Navigation (CVDN) validation unseen set and test leaderboard. * denotes agent that utilizes graph information during navigation.</p>
-      </div>
-
-    </div>
-  </div>
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-      <h2 class="title is-5">Ablation Results -- Effectiveness of Pre-training Tasks</h2>
+      <h2 class="title is-5">Performance: Fine-tuned</h2>
 
     <center><img src="./VLN-SIG/table1.png" alt="Teaser" width="100%"></center>
 
@@ -313,7 +223,7 @@ Action Prediction with Image Generation mimics the action prediction process and
 
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-      <h2 class="title is-5">Ablation Results -- Effectiveness of Dynamic Codebook Selection</h2>
+      <h2 class="title is-5">Performance: Zero-shot</h2>
 
     <center><img src="./VLN-SIG/table2.png" alt="Teaser" width="100%"></center>
 
@@ -325,7 +235,7 @@ Action Prediction with Image Generation mimics the action prediction process and
 
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-      <h2 class="title is-5">Ablation Results -- Comparison of Image Semantic Representation Methods</h2>
+      <h2 class="title is-5">Error-Analysis</h2>
 
     <center><img src="./VLN-SIG/table3.png" alt="Teaser" width="100%"></center>
 
@@ -336,38 +246,7 @@ Action Prediction with Image Generation mimics the action prediction process and
   </div>
   </div>
 </section>
-<hr>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-    <h2 class="title is-3">Generation Examples</h2>
-
-    <div class="result_row">
-      <div class="result_column">
-        <!-- <iframe src="./VLN-SIG/example1.pdf" width="100%" height="300px" style="border: 0;"></iframe> -->
-  <img src="./VLN-SIG/example1.png" alt="Teaser">
-</div>
-<div class="result_column">
-  <img src="./VLN-SIG/example2.png" alt="Teaser">
-</div>
-</div>
-
-      <div class="content has-text-justified">
-<p>Our model could reasonably generate future semantics and reconstruct future images. We generate the token for each patch in the image with our APIG head learned with weighted patch probability. We set the weight vector to be an indicator vector, where the weight for the target patch is 1 and the others are 0. We use x% (x&#8712{70, 80, 90}) of the patches with ground truth tokens encoded with pre-trained dVAE, the rest patches with the tokens generated by our APIG head, and then use the dVAE decoder to decode the image. Our generated image could almost reconstruct the beds and pictures in the original image with small vague areas when given 70% of the ground truth tokens. In comparison, filling the 30% patches with random tokens will generate distorted images with large white parts, and the beds and pictures information cannot be identified. We also notice that our model still fails to generate the full image when all the tokens in the image are predicted by our APIG head, and needs at least 70% of the ground truth tokens to generate images of reasonable quality.
- </p>
-      </div>
-
-      <div class="content has-text-justified">
-We furture compare the generated semantics with the ground truth semantics quantitatively to demonstrate that the semantic information underlying them is similar. Specifically, we represent the semantics of each visual token as the output of the first embedding layer in the dVAE decoder (which maps each token to a 128 dimension representation space). We calculate the distance between generated semantics and ground truth semantics, and compare it with the distance between the ground truth semantics and all other tokens in the vocabulary (i.e., the distance between the ground truth token and other 8191 tokens for each patch). We normalize each semantic representation and use l2-norm as the distance. Our method has a distance of 0.95, while the baseline is 1.31. This shows that the distance between our generated semantics and ground truth semantics is closer.
-      </div>
-
-    </div>
-  </div>
-  </div>
-</section>
-<hr>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
