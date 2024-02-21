@@ -74,6 +74,17 @@
 
 <ul>
   <li>
+    <p><b><a href=https://arxiv.org/abs/2401.16467">Soft Self-Consistency Improves Language Model Agents</a></b><br/>
+Han Wang*, <strong>Archiki Prasad*</strong>, Elias Stengel-Eskin*, and Mohit Bansal<br />
+<b>Arxiv Preprint</b><br /> 
+[<a href="#" onclick="$('#archiki_softsc24_abstract').toggle();return false;" style="font-variant: small-caps;">abstract</a>] [<a href="https://github.com/HanNight/soft_self_consistency" style="font-variant: small-caps;">code</a>] 
+<div id="archiki_softsc24_abstract" class="abstract" style="display:none;">
+</br>
+    <p>
+Generations from large language models (LLMs) can be improved by sampling and scoring multiple solutions to select a final answer. Current "sample and select" methods such as self-consistency (SC) rely on majority voting to score answers. However, when tasks have many distinct and valid answers, selection by voting requires a large number of samples. This makes SC prohibitively expensive for interactive tasks that involve generating multiple actions (answers) sequentially. After establishing that majority voting fails to provide consistent gains on such tasks, we demonstrate how to increase success rates by softening the scoring criterion. We introduce Soft Self-Consistency (Soft-SC), which replaces SC's discontinuous scoring with a continuous score computed from model likelihoods, allowing for selection even when actions are sparsely distributed. Soft-SC improves both performance and efficiency on long-horizon interactive tasks, requiring half as many samples as SC for comparable or better performance. For a fixed number of samples, Soft-SC leads to a 1.3% increase over SC in absolute success rate on writing bash programs, a 6.6% increase on online shopping (WebShop), and a 4.7% increase for an interactive household game (ALFWorld). Finally, we show that Soft-SC can be applied to both open-source and black-box models.</div>
+</p>
+  </li>
+  <li>
     <p><b><a href=https://arxiv.org/abs/2401.16467">ReGAL: Refactoring Programs to Discover Generalizable Abstractions</a></b><br/>
 Elias Stengel-Eskin*, <strong>Archiki Prasad*</strong>, and Mohit Bansal<br />
 <b>Arxiv Preprint</b><br /> 
