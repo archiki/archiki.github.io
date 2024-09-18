@@ -74,6 +74,15 @@
 
 <ul>
   <li>
+    <p><b><a href="https://arxiv.org/abs/2409.07394">AdaCAD: Adaptively Decoding to Balance Conflicts between Contextual and Parametric Knowledge</a></b><br/>
+Han Wang, <strong>Archiki Prasad</strong>, Elias Stengel-Eskin, and Mohit Bansal<br />
+<b>Arxiv Preprint</b><br /> 
+[<a href="#" onclick="$('#archiki_ada24_abstract').toggle();return false;" style="font-variant: small-caps;">abstract</a>] [<a href="https://github.com/swarnaHub/System-1.x" style="font-variant: small-caps;">code</a>] 
+<div id="archiki_ada24_abstract" class="abstract" style="display:none;">
+</br>
+    <p>
+Knowledge conflict arises from discrepancies between information in the context of a large language model (LLM) and the knowledge stored in its parameters. This can hurt performance when using standard decoding techniques, which tend to ignore the context. Existing test-time contrastive methods seek to address this by comparing the LLM's output distribution with and without the context and adjust the model according to the contrast between them. However, we find that these methods frequently misjudge the degree of conflict and struggle to handle instances that vary in their amount of conflict, with static methods over-adjusting when conflict is absent. We propose a fine-grained, instance-level approach called AdaCAD, which dynamically infers the weight of adjustment based on the degree of conflict, as measured by the Jensen-Shannon divergence between distributions representing contextual and parametric knowledge. Our experiments across four models on six diverse question-answering (QA) datasets and three summarization tasks demonstrate that our training-free adaptive method consistently outperforms other decoding methods on QA, with average accuracy gains of 14.21% (absolute) over a static contrastive baseline, and improves the factuality of summaries by 5.59 (AlignScore). Furthermore, our analysis shows that while decoding with contrastive baselines hurts performance when conflict is absent, AdaCAD mitigates these losses, making it more applicable to real-world datasets in which some examples have conflict and others do not.  </li>
+  <li>
     <p><b><a href="https://arxiv.org/abs/2407.14414">System-1.x: Learning to Balance Fast and Slow Planning with Language Models</a></b><br/>
 Swarnadeep Saha, <strong>Archiki Prasad</strong>, Justin Chih-Yao Chen, Peter Hase, Elias Stengel-Eskin, and Mohit Bansal<br />
 <b>Arxiv Preprint</b><br /> 
