@@ -74,6 +74,15 @@
 
 <ul>
   <li>
+    <p><b><a href="https://arxiv.org/abs/2410.01735">LASeR: Learning to Adaptively Select Reward Models with Multi-Armed Bandits</a></b><br/>
+Duy Nguyen*, <strong>Archiki Prasad*</strong>, Swarnadeep Saha, Elias Stengel-Eskin, and Mohit Bansal<br />
+<b>Arxiv Preprint</b><br /> 
+[<a href="#" onclick="$('#archiki_laser24_abstract').toggle();return false;" style="font-variant: small-caps;">abstract</a>] [<a href="https://github.com/duykhuongnguyen/LASeR-MAB" style="font-variant: small-caps;">code</a>] 
+<div id="archiki_laser24_abstract" class="abstract" style="display:none;">
+</br>
+    <p>
+Reward Models (RMs) play a crucial role in aligning LLMs with human preferences, enhancing their performance by ranking outputs during inference or iterative training. However, the degree to which an RM generalizes to new tasks is often not known a priori (e.g. some RMs may excel at scoring creative writing vs. math reasoning). Therefore, using only one fixed RM while training LLMs can be suboptimal. Moreover, optimizing LLMs with multiple RMs simultaneously can be prohibitively computationally-intensive and challenging due to conflicting signals from different RMs, potentially degrading performance. To address these challenges, we introduce LASeR (Learning to Adaptively Select Rewards), which iteratively trains LLMs using multiple RMs, selecting and utilizing the most well-suited RM for each instance to rank outputs and generate preference data, framed as a multi-armed bandit problem. Our results on commonsense and math reasoning tasks demonstrate that LASeR can boost iterative LLM optimization by optimizing for multiple RMs, improving the absolute average accuracy of Llama-3-8B over three datasets by 2.67% over training with ensemble RM scores while also showing superior training efficiency (e.g., a 2x speedup). Moreover, on WildChat, a benchmark of instruction-following prompts, we find that using Llama-3-8B LASeR leads to a 71.45% AlpacaEval win rate over sequentially optimizing multiple RMs. Extending to long-context generation tasks, we find that on Llama-3-8B, LASeR achieves an average improvement of 2.64 F1 and 2.42 F1 on single- and multi-document QA over random RM selection when used with best-of-n sampling. LASeR is robust to noisy rewards and generalizes to multiple settings. Finally, LASeR's RM selection changes depending on the underlying task or instance and we verify the presence of conflicting preferences from multiple RMs that can be mitigated using LASeR.  
+  <li>
     <p><b><a href="https://arxiv.org/abs/2409.12147">MAgICoRe: Multi-Agent, Iterative, Coarse-to-Fine Refinement for Reasoning</a></b><br/>
 Justin Chih-Yao Chen, <strong>Archiki Prasad</strong>, Swarnadeep Saha, Elias Stengel-Eskin, and Mohit Bansal<br />
 <b>Arxiv Preprint</b><br /> 
