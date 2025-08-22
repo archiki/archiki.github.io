@@ -47,7 +47,7 @@ a:hover {
 }
 
 .paper.highlight:hover {
-  background-color: rgba(210, 233, 226, 1);   /* stronger green on hover */
+  background-color: rgba(210, 233, 226, 0.75);   /* stronger green on hover */
 }
 
 
