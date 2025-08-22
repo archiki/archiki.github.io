@@ -13,7 +13,22 @@ a:hover {
 
 
 .noter {
-    font-size: 9pt;
+    font-size: 10pt;
+}
+
+.job-note {
+  background-color: rgba(210, 233, 226, 0.4); /* soft green */
+  border-left: 4px solid #006400;
+  border-radius: 6px;
+  color: #333;
+  line-height: 1.4;
+  padding: 6px 10px;
+  
+  position: sticky;
+  top: 20px;   /* distance from top while scrolling */
+  max-width: 100%;     /* ensures it doesn’t overflow */
+  word-wrap: break-word; /* wraps long words/links */
+  box-sizing: border-box; /* padding included in width */
 }
 
 .tagsep {
@@ -67,6 +82,7 @@ a:hover {
             margin-left: 50%;
             min-height:100%; */
         position: fixed;
+        width: 20%;
     }
 }
 
