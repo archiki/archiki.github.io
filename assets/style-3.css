@@ -40,7 +40,7 @@ a:hover {
 }
 
 .paper.highlight {
-  background-color: rgba(210, 233, 226, 0.5); /* soft green with 70% opacity */
+  background-color: rgba(210, 233, 226, 0.4); /* soft green with 70% opacity */
   border-radius: 7px;                        /* rounded corners */
   padding: 8px 12px;                          /* breathing room */
   transition: background-color 0.3s ease;     /* smooth hover effect */
