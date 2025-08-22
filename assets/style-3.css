@@ -40,10 +40,16 @@ a:hover {
 }
 
 .paper.highlight {
-    border-left: 1px solid #ddd;
-    background-color: #ebffeb;   /* your highlight color */
-    border-radius: 7px;          /* optional rounded edges */
+  background-color: rgba(233, 253, 224, 0.7); /* soft green with 70% opacity */
+  border-radius: 10px;                        /* rounded corners */
+  padding: 8px 12px;                          /* breathing room */
+  transition: background-color 0.3s ease;     /* smooth hover effect */
 }
+
+.paper.highlight:hover {
+  background-color: rgba(233, 253, 224, 1);   /* stronger green on hover */
+}
+
 
 .menulink:hover {
     color: #111;
