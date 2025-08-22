@@ -4,7 +4,7 @@ const fontweights = [300, 400]
 
 // Color properties
 const basecolor = "#777";
-const accentcolor = "#007";
+const accentcolor = "#006400";
 const highlightcolor = "#111";
 
 // const basecolor = "#888";
@@ -24,7 +24,7 @@ const adecoration = "underline dotted";
 // const ahoverdecoration = "none"; //none, underline, overline, dotted, color (https://www.w3schools.com/cssref/pr_text_text-decoration.asp)
 
 // Menu properties
-const menucolor = basecolor;
+const menucolor = accentcolor;
 const menufontsize = "15pt";
 const menudecoration = "none";
 // const menuhover = accentcolor;
@@ -36,13 +36,13 @@ const headercolor = accentcolor;
 const headerfontsize = "18pt";
 const headerdecoration = "none";
 const namecolor = highlightcolor;
-const namefontsize = "23pt";
+const namefontsize = "25pt";
 
 
 // Publication properties
 const ptitlecolor = accentcolor;
 const ptitlefontsize = bodyfontsize;
-const ptitleweight = bodyfontweight;
+const ptitleweight = bodyfontweight + 100;
 const ptitledecoration = "none";
 const ptitlestyle = "normal";
 
