@@ -25,7 +25,6 @@ a:hover {
   padding: 6px 10px;
   margin-top: 15px;    /* space above the note */
 
-  position: sticky;
   top: 20px;   /* distance from top while scrolling */
   max-width: 100%;     /* ensures it doesn’t overflow */
   word-wrap: break-word; /* wraps long words/links */
